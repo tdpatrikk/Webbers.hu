@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,800&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a class="header__logo" href="index.html">webbers.hu</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">RÓLUNK</a></li>
+                    <li><a href="szolgáltatásaink.html">SZOLGÁLTATÁSAINK / ÁRAK</a></li>
+                    <li><a href="kapcsolat.html">KAPCSOLAT</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">RÓLUNK</a></li>
+                    <li><a href="szolgáltatásaink.html">SZOLGÁLTATÁSAINK / ÁRAK</a></li>
+                    <li><a href="kapcsolat.html">KAPCSOLAT</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="shade__background">
+            <div class="cover">
+                <div class="wrapper">
+                    <h1 class="headline">WEBBERS</h1>
+                    <p class="tagline">Könnyen kezelhető és reszponzív weboldalak</p>
+                </div>
+            </div>
+        </div>
+        <div class="rólunk__section">
+            <h1>RÓLUNK</h1>
+            <hr class="small">
+            <div class="rólunk__wrapper">
+                <div class="rólunk__text">
+                    <p>A Webbers.hu kifejezetten a letisztult és a felhasználó által könnyedén navigálható weboldalak megtervezésével és működtetésével foglalkozik. Egyszerűbb, de akár komplex, reszponzív, azaz a lehetőségekhez igazodó, rugalmasan alkalmazkodó weboldalak megépítését is vállaljuk. Kollégáinkkal gyors és precíz munkával  egy egyszerű weboldalt akár kevesebb mint egy hét alatt felépítünk és működésbe hozunk.</p>
+                    <br>
+                    <p>Terveztesse meg saját weboldalát nálunk!</p>
+                </div>
+                <div class="rólunk__img">
+                    <img src="assets/kelly-sikkema-v9FQR4tbIq8-unsplash.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="szolgáltatásaink__section">
+            <div class="szolgáltatásaink__wrapper">
+                <h1>SZOLGÁLTATÁSAINK</h1>
+                <hr class="small">
+                <div class="szolgáltatásaink__allsection">
+                    <div class="szolgáltatásaink__littlesections">
+                        <h3 class="Szolgáltatásaink__h3">
+                            <img class="szolgáltatásaink__icons" src="Assets/Note__icon.svg" alt="">
+                            <strong>Kontent</strong>
+                        </h3>
+                        <p>Segítünk a weboldalra kikerülő tartalom megírásában és tökéletesítésében.</p>
+                    </div>
+                    <div class="szolgáltatásaink__littlesections">
+                        <h3 class="Szolgáltatásaink__h3">
+                            <img class="szolgáltatásaink__icons" src="Assets/Platformook_icon.svg" alt="">
+                            <strong>Platformok</strong>
+                        </h3>
+                        <p>A webbers által elkészített weboldalak minden kijelzőn, annak nagyságának megfelelően jelennek meg.</p>
+                    </div>
+                    <div class="szolgáltatásaink__littlesections">
+                        <h3 class="Szolgáltatásaink__h3">
+                            <img class="szolgáltatásaink__icons" src="Assets/Optimalizálás_icon.svg" alt="">
+                            <strong>Optimalizálás</strong>
+                        </h3>
+                        <p>Weboldalainknak biztosítunk megfelelő keresési kulcsszavakat melyek növelik az oldal népszerűségét és megtalálhatóságát.</p>
+                    </div>
+                    <div class="szolgáltatásaink__littlesections">
+                        <h3 class="Szolgáltatásaink__h3">
+                            <img class="szolgáltatásaink__icons" src="Assets/Design_icon.svg" alt="">
+                            <strong>Design</strong>
+                        </h3>
+                        <p>A webbersnél nem csak egy weboldal működésével, hanem kinézetével is foglalkozunk.</p>
+                    </div>
+                    <div class="szolgáltatásaink__littlesections">
+                        <h3 class="Szolgáltatásaink__h3">
+                            <img class="szolgáltatásaink__icons" src="Assets/Egyéb_icon.svg" alt="">
+                            <strong>Egyéb</strong>
+                        </h3>
+                        <p>Itt a webbersnél minden feladatra készen állunk. Egyedi weboldal tervezése mellett, a weboldal működésbe hozásában is segítünk!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weboldalfajták__section">
+            <div class="weboldalfajták__wrapper">
+                <h1>WEBOLDALFAJTÁK</h1>
+                <hr class="small">
+                <div class="weboldalfajták__allsection">
+                        <a class="weboldalfajták__a" href="szolgáltatásaink.html">
+                            <div class="weboldalfajták__littlesection">
+                                <img class="weboldalfajták__img" src="assets/weboldalfajták_1.avif">
+                                <h3>Egyszerű weboldal</h3>
+                                <br>
+                                <p>Egy egyszerű weboldalban nincsenek bonyolultabb megoldások, a tartalom van a fókuszban, bár több oldalra is terjedhet (max: 5). Ilyen lehet például egy manikűrös oldala vagy egy kisebb blog.</p>
+                            </div>
+                        </a>
+                    <a href="szolgáltatásaink.html">
+                        <div class="weboldalfajták__littlesection">
+                            <img class="weboldalfajták__img" src="Assets/weboldalfajták_2.avif">
+                            <h3>Komplex weboldal</h3>
+                            <br>
+                            <p>Egy komplex weboldal összetett folyamatokat kezel, ötnél több oldalt tartalmaz (komplex megrendelési, bejelentkezési funkciók és különböző admin felületek, stb.).</p>
+                        </div>
+                    </a>
+                    <a href="szolgáltatásaink.html">
+                        <div class="weboldalfajták__littlesection">
+                            <img class="weboldalfajták__img" src="Assets/weboldalfajták_3.avif">
+                            <h3 class="long__h3">Meglévő weboldal szerkesztése</h3>
+                            <br>
+                            <p>Egy már létező weboldal szerkesztése is lehet nagy feladat. Ide tartozhat például a weboldal designjának a megváltoztatása, új oldalak hozzáadása, különböző extra funkciók létrehozása.</p>
+                        </div>
+                    </a>  
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <h4>Webbers.hu</h4>
+                    <p>Copyright © 2022 Minden jog fenntartva</p>
+                </div>
+                <div class="footer__right">
+                    <ul>
+                        <li><a href="kapcsolat.html">Jogi nyilatkozat</a></li>
+                        <li><a href="kapcsolat.html">Elérhetőségek</a></li>
+                        <li><a href="adatvédelem.html">Adatvédelmi nyilatkozat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="header.js"></script>
+    </body>
+</html>

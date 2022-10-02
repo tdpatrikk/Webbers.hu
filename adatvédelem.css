@@ -1,0 +1,322 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESTE ---------------------------
+-----------------------------------------------
+----------------------------------------------- */
+/* css for the header--------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+  margin-right: 60px;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: -100px;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  padding: 20px 0;
+  text-align: center;
+  margin-left: auto;
+  font-size: 25px;
+  width: 40vw;
+  border-top: 2px solid #666;
+  background-color: #303841;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+strong {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #303841;
+    position: fixed;
+    align-items: center;
+    padding: 0 50px;
+    font-family: 'Open Sans', sans-ser;
+}
+
+header a {
+    color: #fff;
+}
+
+header a:hover {
+    color: #00adb5;
+}
+
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.navbar {
+    list-style: none;
+    margin-right: 60px;
+}
+
+.navbar li {
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+  }
+  
+  .navbar li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #00adb5;
+    display: block;
+    margin: auto;
+  }
+
+
+/* css for the content----------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------*/
+
+.textbox__background {
+    padding-top: 4rem;
+    background-color: #f7f9f8;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.8rem;
+    font-size: 1.25rem;
+}
+
+.textbox__text {
+    max-width: 1100px;
+    padding: 0 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Tájékoztatot__h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1.25rem 0;
+}
+
+.textbox__text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.15rem;
+    color: #00adb5;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.felsorolas_beljebb {
+    padding-left: 2rem;
+}
+
+.Vissza__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0.7rem;
+    background-color: #303841;
+}
+
+.Vissza__btn a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.Vissza__btn a:hover {
+    color: #00adb5;
+}
+
+/* css for the footer-----------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+footer {
+    height: 100px;
+    background-color: #303841;
+    color: #fff;
+    align-items: center;
+    font-family:'Open Sans', sans-ser;
+
+  }
+
+  .footer__wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 30px 0 17px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer a {
+    color: #fff;
+  }
+
+  footer a:hover {
+    color: #00adb5;
+  }
+
+  .footer__left {
+    font-size: 20px;
+  }
+
+  .footer__left h4 {
+    font-weight: 600;
+    font-size: 25px;
+    padding: 3px;
+  }
+
+  .footer__right li{
+    display: inline-block;
+    padding: 15px 30px 0;
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+
+    .footer__left {
+      font-size: 15px;
+    }
+
+    .footer__right {
+      text-align: center;
+    }
+
+    .footer__right li {
+      padding: 11px 20px;
+      font: 15px  ;
+    }
+
+    .footer__wrapper {
+      padding: 10px 0 0;
+    }
+  }
+
+  @media (max-width: 414px) {
+    footer {
+      height: 305px;
+    }
+    
+    .footer__wrapper {
+      display: block;
+      text-align: center;
+    }
+
+    .footer__right {
+      margin-top: 30px;
+    }
+
+    .footer__right ul li{
+      display: block;
+      margin: 15px 0;
+      font-size: 30px;
+      border-top: 1px solid #666;
+    }
+  }
